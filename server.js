@@ -79,7 +79,7 @@ app.post('/voice', (req, res) => {
     const twiml = new twilio.twiml.VoiceResponse();
 
     try {
-        twiml.say({ voice: 'Google.en-US-Standard-C' }, "Hello, this is Agrivision. What can I do for you today?");
+        twiml.say({ voice: 'Google.en-US-Standard-C' }, "Hello, this is CrisisMap. What can I do for you today?");
         const connect = twiml.connect();
         const streamUrl = `wss://${req.headers.host}/media-stream`;
         console.log(`[voice] Connecting stream to: ${streamUrl}`);
